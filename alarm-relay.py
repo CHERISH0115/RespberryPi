@@ -144,7 +144,7 @@ if __name__ == '__main__':
             
             # 判断距离是否小于阈值，如果是则使蜂鸣器响并触发继电器闭合
             if distance < threshold:
-                buzzer.buzz(0.1)  # 蜂鸣器响0.5秒
+                buzzer.buzz(0.1)  # 蜂鸣器响0.1秒
                 relay.deactivate()  # 继电器断开
             else:
                 relay.activate()  # 继电器闭合
